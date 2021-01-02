@@ -17,6 +17,8 @@ client = commands.Bot(command_prefix = '.')
 
 url="https://www.youtube.com/watch?v=cScEuPr2C4c"
 
+token = os.getenv("DISCORD_BOT_TOKEN")
+
 @client.event
 async def on_ready():
     print("Bot is ready")
@@ -124,5 +126,5 @@ async def on_voice_state_update(member, before, after):
     
     
     
-client.run('Nzg4NDY0MTMwMTkzMzU4ODY5.X9j4cQ.nAzSzghzf7UWs67dg3tMSfMX-4o')
+client.run(token)
 
